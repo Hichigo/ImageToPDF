@@ -46,38 +46,3 @@ for dirname, dirnames, filenames in os.walk(devPath):
 			if (releasePath + "\\" + namePdf + ".pdf") != 'C:\\Users\\ivan\\Desktop\\p\\release\\.pdf':
 				print(releasePath + "\\" + namePdf + ".pdf")
 				pdf.output(releasePath + "\\" + namePdf + ".pdf", "F")
-
-
-
-
-
-
-
-
-
-#-----------------------------------------------------
-# thisPath = os.path.dirname(os.path.abspath(__file__))
-# devPath = thisPath + "/dev";
-# releasePath = thisPath + "\\release";
-
-# os.chdir(devPath)
-
-# for file in glob.glob("*.jpg"):
-# 	img = Image.open(file)
-# 	img.thumbnail((500,500), Image.ANTIALIAS)
-# 	print(releasePath + file)
-# 	img.save(releasePath + "\\" + file, "JPEG")
-
-# pdf = FPDF()
-
-# imagelist = ['1.jpg', '2.jpg']
-
-# for image in imagelist:
-# 	img = Image.open(image)
-# 	w, h = img.size
-# 	img.thumbnail((500,500), Image.ANTIALIAS)
-# 	img.save("2"+image, "JPEG")
-# 	print(w, h)
-# 	pdf.add_page()
-# 	pdf.image(image,0,0,w,h)
-# pdf.output("yourfile1.pdf", "F")
